@@ -1,50 +1,18 @@
-//document.querySelector("button").addEventListener("click", handleClick); //what this line of code does,it find the first button in our document 
-//and then add a eventlistener to that button so it listen for clicked that happen on button, when it does, it runs the code inside the function handleclick,
-//that send alert that (clicked)   (agar main handleClick main bracket() daal deta to vo click kiye bina hi aa jata isliye me nhi dala)
-
-
-// function handleClick(){
-//     alert("clicked");
-// }
-/* we can also use anyomous function, work same as above function */
-//document.querySelector("button").addEventListener("click", function(){
-//     alert("clicked");
-// });
-
-
-// var numofdrum = document.querySelectorAll(".drum").length;
-// for (var i=0; i<numofdrum; i++){
-//     document.querySelectorAll(".drum")[i].addEventListener("click",function() {
-//         alert("checked");
-//     });
-  
-// }
-    
-//Dectectin button press
 var numofdrum = document.querySelectorAll(".drum").length;
 for (var i=0; i<numofdrum; i++){
-
     document.querySelectorAll(".drum")[i].addEventListener("click",function() {
-
-    //   var audio = new Audio("sounds/tom-1.mp3");
-    //   audio.play();
-
     var buttoninnerhtml = this.innerHTML;
   makeSound(buttoninnerhtml);
-
   buttonAnimation(buttoninnerhtml);
     });
   
 }
-//detecting keyword press
+
 document.addEventListener("keypress", function(){
     makeSound(event.key);
-
     buttonAnimation(event.key);
 });
-
 function makeSound(key){
-
     switch (key) {  
         case "w":
             var snare = new Audio("sounds/snare.mp3");
