@@ -11,7 +11,7 @@ for (var i=0; i<numofdrum; i++){
     });
   
 }
-//detecting keyword press
+//detecting keywords press
 document.addEventListener("keypress", function(){
     makeSound(event.key);
 
