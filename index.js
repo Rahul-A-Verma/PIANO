@@ -1,18 +1,25 @@
+
+//Dectectin button press
 var numofdrum = document.querySelectorAll(".drum").length;
 for (var i=0; i<numofdrum; i++){
+
     document.querySelectorAll(".drum")[i].addEventListener("click",function() {
     var buttoninnerhtml = this.innerHTML;
   makeSound(buttoninnerhtml);
+
   buttonAnimation(buttoninnerhtml);
     });
   
 }
-
+//detecting keyword press
 document.addEventListener("keypress", function(){
     makeSound(event.key);
+
     buttonAnimation(event.key);
 });
+
 function makeSound(key){
+
     switch (key) {  
         case "w":
             var snare = new Audio("sounds/snare.mp3");
