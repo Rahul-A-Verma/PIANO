@@ -4,78 +4,76 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
 }
-
-.w {
-background-image: url(images/kick.png);
-}
-
-.a {
-  background-image: url(images/snare.png);
-}
-
-.s {
-  background-image: url(images/tom1.png);
-}
-
-.d {
-  background-image: url(images/tom2.png);
-}
-
-.j {
-  background-image: url(images/tom3.png);
-}
-
-.k {
-  background-image: url(images/tom4.png);
-}
-
-.l {
-  background-image: url(images/crash.png);
-}
+  .keyboard{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #283149;
+  }
 
 .set {
-  margin: 10% auto;
+  display: flex;
+  position: relative;
+  margin-left: 4px;
 }
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
-
-.drum {
+.white-key{
+  width: 50px;
+  height: 140px;
+  background-color: antiquewhite;
+  border: 3px solid black;
+  margin-left: -2px;
+  border-radius: 0 0 5px 5px;
   outline: none;
-  border: 10px solid #404B69;
-  font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
+  cursor: pointer;
+  
 }
+.white-key:active {
+   background-color: #686464; 
+}
+.black-key{
+  position: absolute;
+  width: 35px;
+  height: 100px;
+  border-radius: 0 0 4px 4px;
+  background-image: linear-gradient(black,rgb(39, 39, 39));
+  border:2px solid black;
+  outline: none;
+  cursor: pointer;
+
+}
+.black-key:active {
+  background-image: linear-gradient(#3a0707, #e45353);
+}
+.Db4-key {
+  left: 30px;
+}
+.Eb4-key{
+  left: 78px;
+}
+.Gb4-key{
+  left:174px;
+}
+.Ab4-key{
+  left:222px;
+}
+.Bb4-key{
+  left:270px;
+}
+.Db5-key{
+  left:366px ;
+}
+.Eb5-key{
+  left:414px ;
+}
+
