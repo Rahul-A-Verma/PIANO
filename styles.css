@@ -7,7 +7,7 @@ h1 {
   font-size: 4rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 #001dac;
 }
 
 footer {
@@ -38,7 +38,7 @@ footer {
   cursor: pointer;
   
 }
-.white-key:active {
+.white-key.active {
    background-color: #686464; 
 }
 .black-key{
@@ -52,8 +52,8 @@ footer {
   cursor: pointer;
 
 }
-.black-key:active {
-  background-image: linear-gradient(#3a0707, #e45353);
+.black-key.active {
+  background-image: linear-gradient(#000000, #101010);
 }
 .Db4-key {
   left: 30px;
